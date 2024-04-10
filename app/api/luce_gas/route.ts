@@ -10,8 +10,9 @@ export async function GET() {
         
         return NextResponse.json(rows)
     } catch (error) {
+        console.error("Error in GET request:", error);
         return NextResponse.json({
-            error: error
+            error: "Internal server error"
         }, { status: 500 })
     }
 }
