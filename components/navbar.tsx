@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 import { CiLogin } from "react-icons/ci";
 
 
-const navbar = () => {
+const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -43,4 +43,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
