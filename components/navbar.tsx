@@ -5,11 +5,13 @@ import { Button } from '@/components/ui/button';
 import { CiLogin } from 'react-icons/ci';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import ProdDrop from '@/components/dropdown-prod';
+import SideBar from '@/components/SideBar';
 
 const Navbar = () => {
     const [isHoveredLuceGas, setIsHoveredLuceGas] = useState(false);
     const [isHoveredInterCasa, setIsHoveredInterCasa] = useState(false);
     const [isHoveredTarifTel, setIsHoveredTarifTel] = useState(false);
+    const [isClickedHam, setisClickedHam] = useState(false);
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -25,6 +27,10 @@ const Navbar = () => {
 
         fetchData();
     }, []);
+
+    const handleClickHam = () => {
+      setisClickedHam(!isClickedHam); 
+    };
   return (
     <>
       <nav className='w-full flex justify-evenly max-[980px]:justify-between p-5 items-center h-[70px] border-b-2 bg-transparent'>
@@ -60,7 +66,7 @@ const Navbar = () => {
           </Button>
         </div>
         <div className='hidden max-[980px]:flex'>
-          <Button className='hover:text-[#53637b]' variant='outline'>
+          <Button className='hover:text-[#53637b]' variant='outline' onClick={handleClickHam}>
             <GiHamburgerMenu />
           </Button>
         </div>
@@ -70,6 +76,7 @@ const Navbar = () => {
           {isHoveredInterCasa && data && <ProdDrop categorys='internetcasa' data={data} />}
           {isHoveredTarifTel && data && <ProdDrop categorys='tariffetele' data={data} />}
       </div>
+      {isClickedHam && <SideBar />}
     </>
   );
 };

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full justify-center flex-wrap">
+    <main className="flex h-[calc(100vh-70px)] w-full justify-center flex-wrap">
       TIME ENERGY
     </main>
   );
