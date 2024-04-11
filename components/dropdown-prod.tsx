@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 interface Category {
     categorys: keyof LuceGasData;
@@ -11,19 +11,7 @@ interface LuceGasData {
     tariffetele: string;
 }
 
-const ProdDrop = ({ categorys }: Category) => {
-   
-    const [data, setData] = useState<LuceGasData[]>([]);
-    useEffect(() => {
-        const fetchData = async () => {
-            const response = await fetch("/api/luce_gas");
-            const data = await response.json();
-            setData(data);
-        };
-
-        fetchData();
-    }, []);
-
+const ProdDrop = ({ categorys, data }: Category & { data: LuceGasData[] }) => {
     const filteredData = data.filter((item) => item[categorys]);
 
     const categoryNames: { [key in keyof LuceGasData]: string } = {
