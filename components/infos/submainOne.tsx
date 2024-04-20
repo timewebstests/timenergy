@@ -65,7 +65,7 @@ const SubmainOne = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[200px] bg-blue-500 my-16'>
+            <div className='w-full h-[200px] bg-blue-400 my-16'>
 
             </div>
         </div>
