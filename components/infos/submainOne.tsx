@@ -3,13 +3,13 @@ import { CiCircleCheck } from "react-icons/ci";
 
 const SubmainOne = () => {
   return (
-    <div className='w-full flex justify-center max-[980px]:mt-10'>
+    <div className='w-full flex justify-center max-[980px]:mt-10 mb-5'>
         <div className='w-[60%] max-[980px]:w-full flex justify-center flex-wrap border-t-[1px] max-[980px]:px-5 border-slate-300'>
             <div className='w-full mt-5 text-3xl font-bold'>
-                Noi confrontiamo, tu risparmi
+                Risparmia tempo e denaro con Time
             </div>
-            <div className='w-full mt-5 text-lg'>    
-                Time Energy è il sito di comparazione numero 1 in Italia.
+            <div className='w-full mt-2 text-xl'>    
+                tariffe convenienti su misura per te!
             </div>
             <div className='w-full flex justify-around   gap-5 mt-10 flex-wrap'>
                 <div className='w-[20%] max-[1350px]:w-[45%] max-sm:w-full flex flex-nowrap'>
@@ -21,7 +21,7 @@ const SubmainOne = () => {
                             VELOCE
                         </div>
                         <div className='w-full'>
-                            In pochi minuti confrontiamo e troviamo la soluzione più vantaggiosa per te.
+                            Cogli l'attimo con Time: risparmia tempo, guadagna comodità!
                         </div>
                     </div>
                 </div>
@@ -31,10 +31,10 @@ const SubmainOne = () => {
                     </div>
                     <div className='w-[75%] space-y-3 max-sm:space-y-1'>
                         <div className='w-full text-xl font-bold text-[#3a6bff]'>
-                            PERSONALE
+                            ASSISTENZA
                         </div>
                         <div className='w-full'>
-                            Ti garantiamo trasparenza e le offerte più adatte alle tue esigenze.
+                            Soluzioni su misura e consulenza dedicata per ogni cliente.
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const SubmainOne = () => {
                             GRATUITO
                         </div>
                         <div className='w-full'>
-                            Facile.it non aggiunge commissioni a carico del cliente, da sempre.
+                            Scopri i nostri servizi gratuiti per ottimizzare il tuo risparmio.
                         </div>
                     </div>
                 </div>
@@ -60,13 +60,10 @@ const SubmainOne = () => {
                             SICURO
                         </div>
                         <div className='w-full'>
-                            Utilizziamo solo canali ufficiali e pagamenti tracciabili per la tua sicurezza.
+                            Il nostro impegno per la sicurezza: certificazioni e controlli costanti per garantirti tranquillità.
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='w-full h-[200px] bg-blue-400 my-16'>
-
             </div>
         </div>
     </div>

@@ -31,7 +31,9 @@ const MainElements = () => {
         <div className='w-full flex justify-center flex-wrap max-[980px]:p-1 p-20 max-[980px]:pt-20'>
             <div className='w-full flex justify-center'>
                 <div className='w-[65%] max-[980px]:w-full text-white flex bg-[url("/mainbg.png")] h-[40vh] bg-cover bg-center px-20 max-[980px]:p-5 font-bold items-center text-[4vh] max-[980px]:text-[3vh]'>
-                    TIME ENERGY è la soluzione giusta per TE!
+                    <div className='w-[60%]'> 
+                        TIME, Risparmia Tempo e Denaro con Noi!
+                    </div>
                 </div>
             </div>
             <div className='flex max-[980px]:w-full max-sm:max-w-[100%] max-w-[65%] justify-center flex-wrap mt-10 gap-10'>

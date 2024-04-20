@@ -13,7 +13,7 @@ const MainCard = ({testo_offerta, foto}:MainCardProps) => {
         <div className='w-full flex justify-center items-center text-2xl max-sm:text-[5vw] py-2 font-bold order-1'>
           {testo_offerta}
         </div>
-        <div className='w-full flex max-sm:h-auto max-sm:max-h-[100px] h-[180px]'>
+        <div className='w-full flex max-sm:h-auto max-sm:max-h-[100px] h-[170px]'>
           <Image 
             src={"/"+foto}
             alt=''
