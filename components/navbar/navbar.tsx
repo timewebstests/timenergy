@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { CiLogin } from 'react-icons/ci';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import ProdDrop from '@/components/dropdown-prod';
-import SideBar from '@/components/SideBar';
+import ProdDrop from '@/components/navbar/dropdown-prod';
+import SideBar from '@/components/navbar/SideBar';
 
 const Navbar = () => {
     const [isHoveredLuceGas, setIsHoveredLuceGas] = useState(false);
@@ -71,12 +71,12 @@ const Navbar = () => {
           </Button>
         </div>
       </nav>
-      <div className={`absolute w-full flex justify-center bg-white transition-opacity duration-500 ease-in-out ${isHoveredLuceGas || isHoveredInterCasa || isHoveredTarifTel ? 'opacity-100' : 'opacity-0'}`} onMouseLeave={() => (setIsHoveredLuceGas(false), setIsHoveredInterCasa(false), setIsHoveredTarifTel(false))}>
+      <div className={`absolute w-full flex justify-center top-[70px] bg-white transition-opacity duration-500 ease-in-out ${isHoveredLuceGas || isHoveredInterCasa || isHoveredTarifTel ? 'opacity-100' : 'opacity-0'}`} onMouseLeave={() => (setIsHoveredLuceGas(false), setIsHoveredInterCasa(false), setIsHoveredTarifTel(false))}>
           {isHoveredLuceGas && data && <ProdDrop categorys='luce_gas' data={data} />}
           {isHoveredInterCasa && data && <ProdDrop categorys='internetcasa' data={data} />}
           {isHoveredTarifTel && data && <ProdDrop categorys='tariffetele' data={data} />}
       </div>
-      {isClickedHam && <SideBar />}
+      {isClickedHam && data && <SideBar data={data}/>}
     </>
   );
 };

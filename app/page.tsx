@@ -1,10 +1,15 @@
-import MainPage from "@/components/mainPage";
+import MainElements from "@/components/main/mainElements";
 import Image from "next/image";
+import Navbar from "@/components/navbar/navbar"
+import SubmainOne from "@/components/infos/submainOne";
+
 
 export default function Home() {
   return (
-    <main className="flex h-[calc(100vh-70px)] w-full justify-center flex-wrap">
-      <MainPage />
+    <main className="flex w-full justify-center flex-wrap">        
+      <Navbar />
+      <MainElements />
+      <SubmainOne />
     </main>
   );
 }

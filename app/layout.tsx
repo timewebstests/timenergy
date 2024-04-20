@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar"
 import Providers from '@/app/providers';
 
 export const metadata: Metadata = {
@@ -17,7 +16,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
           <Providers>{children}</Providers>
       </body>
     </html>

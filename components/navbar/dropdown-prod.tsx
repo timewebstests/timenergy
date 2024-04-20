@@ -22,7 +22,7 @@ const ProdDrop = ({ categorys, data }: Category & { data: LuceGasData[] }) => {
     };
 
     return (
-        <div className='w-full flex justify-center'>
+        <div className='w-full flex justify-center shadow-xl'>
             <div className='w-[50%] flex justify-center flex-wrap p-5 max-[1150px]:w-full max-[570px]:hidden'>
                 <div className='w-full justify-start flex text-gl font-medium h-[20px] pl-8 pb-10 pt-5 text-gray-500'>
                     {categoryNames[categorys]}
