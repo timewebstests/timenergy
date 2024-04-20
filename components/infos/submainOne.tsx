@@ -21,7 +21,7 @@ const SubmainOne = () => {
                             VELOCE
                         </div>
                         <div className='w-full'>
-                            Cogli l'attimo con Time: risparmia tempo, guadagna comodità!
+                            Cogli l`attimo con Time: risparmia tempo, guadagna comodità!
                         </div>
                     </div>
                 </div>
